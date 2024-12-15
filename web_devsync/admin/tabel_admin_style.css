@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #001021;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    transition: width 0.3s ease;
+}
+
+
+.sidebar h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 25px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #daa700;
+    transition: color 0.3s ease;
+}
+.sidebar ul li a:hover {
+    background-color: #00071d;
+}
+
+/* Kontainer Tabel */
+.container {
+    margin-left: 300px;
+    width: calc(100% - 270px);
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Tombol */
+.edit-button, .delete-button {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.edit-button {
+    background-color: #28a745;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
